@@ -1,0 +1,85 @@
+.modal{
+    height: 100%;
+    width: 120%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0px;
+    left: -230px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s; 
+}
+.modal.active{
+    opacity: 1;
+    pointer-events: all;
+
+}
+.modal-content{
+    padding: 20px;
+    border-radius: 12px;
+    background-color: white;
+    width: 500px;
+    height: 250px;
+    transform: scale(0.5);
+    transition: 0.4s all;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(221, 221, 219);
+
+}
+.modal-content.active{
+    transform: scale(1);
+}
+
+.titel-input {
+    margin-top: 5%;
+    height: 50px;
+    border-radius: 12px;
+}
+
+.btn-input {
+    margin-top: 5%;
+    height: 5vh;
+    border-radius: 12px;
+    width: 250px;
+    height: 40px;
+}
+
+@media screen and (max-width: 740px) {
+    .modal{
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        display: flex;
+    }
+
+    .modal-content{
+        padding: 20px;
+        border-radius: 12px;
+        background-color: white;
+        width: 400px;
+        height: 250px;
+        transform: scale(0.5);
+        transition: 0.4s all;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(221, 221, 219);
+    
+    }
+    
+    
+    .btn-input {
+        margin-top: 5%;
+        height: 5vh;
+        border-radius: 12px;
+        width: 150px;
+        height: 40px;
+        margin-right: 3%;
+    }
+}

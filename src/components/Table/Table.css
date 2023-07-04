@@ -1,0 +1,67 @@
+.container-table{
+    display: flex;
+    flex-direction: row;
+}
+
+.cell {
+    width: 90px;
+    height: 40px;
+    background-color: rgb(222, 222, 228);
+    border: thin solid black
+}
+
+.container-cell-case {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(7, 90px);
+    grid-template-rows: repeat(24, 42px);
+    gap: 0;
+    width: 670px;
+}
+
+.cell-case {
+    width: 90px;
+    height: 40px;
+    border: thin solid black;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.container-event {
+    display: flex;
+    flex-direction: column;
+    background: rgb(235, 236, 255);
+    overflow: hidden;
+    word-break: break-all;
+}
+
+.container-event:hover {
+    background: rgb(179, 183, 255); 
+}
+
+@media screen and (max-width: 740px){
+
+    .cell {
+        width: 41px;
+        height: 40px;
+        background-color: rgb(222, 222, 228);
+        border: thin solid black
+    }
+    .container-cell-case {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: repeat(7, auto);
+        grid-template-rows: repeat(24, 42px);
+        gap: 0;
+    
+    }
+    
+    .cell-case {
+        width: 60px;
+        height: 40px;
+        border: thin solid black;
+        font-size: 14px;
+        overflow: hidden;
+       
+    }
+}

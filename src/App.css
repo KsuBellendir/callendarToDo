@@ -1,0 +1,202 @@
+body {
+  background-color: #ffffff;
+}
+
+.App {
+  text-align: center;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+  0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+  border: solid;
+  border-radius: 12px;
+  width: 740px;
+}
+
+.wrapper-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.text {
+  margin-left: 20px;
+}
+
+.btn-add {
+  border: transparent;
+  background-color: transparent;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.icon {
+  color: red;
+}
+
+.wrapper-week {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.wrapper-month {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.wrapper-data {
+  background-color: rgb(212, 213, 214);
+  box-shadow: rgba(174, 176, 177, .2);
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
+  background-color: rgb(211, 211, 211);
+  align-items: center;
+}
+
+.btn-delete-blok {
+  display: none;
+}
+
+.btn-delete {
+  font-size: 20px;
+  width: 100px;
+  margin-right: 40px;
+  border: transparent;
+  background-color: transparent;
+  color: red;
+}
+
+.text-h5 {
+  color: red;
+  font-size: 20px;
+  width: 100px;
+  border: transparent;
+  background-color: transparent;
+
+}
+
+.wrapper-weekday-name {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: start;
+  padding-left: 92px;
+ 
+}
+.wrapper-weekday-num {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50px;
+  justify-content: start;
+  padding-left: 92px;
+
+}
+
+.week-name {
+  display: flex;
+  flex-direction: row;
+  width: 92px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-day {
+  display: flex;
+  color: red;
+  margin: 2px;
+  font-size: 20px;
+  width: 92px;
+  font-weight: bold;
+  height: 50px; 
+  justify-content: center;
+  align-items: center;
+}
+
+.week-number {
+  display: flex;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  width: 92px;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 740px){
+  .container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .wrapper-weekday-name {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: start;
+    padding-left: 43px;
+   
+  }
+  .wrapper-weekday-num {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    justify-content: start;
+    padding-left: 43px;
+  
+  }
+  
+  .week-name {
+    display: flex;
+    flex-direction: row;
+    width: 62px;
+    height: 40px;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    font-size: 12px;
+    
+  }
+  
+  .current-day {
+    display: flex;
+    color: red;
+    margin: 2px;
+    font-size: 20px;
+    width: 62px;
+    font-weight: bold;
+    height: 50px; 
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .week-number {
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 62px;
+    justify-content: center;
+    align-items: center;
+  }
+}
